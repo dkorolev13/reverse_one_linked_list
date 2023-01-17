@@ -3,10 +3,9 @@ Reverse the one linked list using C++
 
 
 ## Run application
-
-* clone this repository
-* 
-<code>$ cd cppipe # local repository
+<code>
+$ git clone 
+$ cd cppipe # local repository
 $ mkdir build
 $ cd build
 $ cmake ..
