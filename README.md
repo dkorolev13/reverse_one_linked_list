@@ -3,6 +3,8 @@ Reverse the one linked list using C++
 
 
 ## Run application
-<code>$ git clone git@github.com:dkorolev13/reverse_one_linked_list.git
+<code>$ sudo apt update
+$ sudo apt upgrade
+$ git clone git@github.com:dkorolev13/reverse_one_linked_list.git
 $ cd reverse_one_linked_list # local repository
 $ ./reverse_one_linked_list.sh</code>
