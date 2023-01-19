@@ -2,7 +2,7 @@
 Reverse the one linked list using C++
 
 
-## Run application
+## Run application for Ubuntu
 <code>$ sudo apt update
 $ sudo apt upgrade
 $ git clone git@github.com:dkorolev13/reverse_one_linked_list.git
