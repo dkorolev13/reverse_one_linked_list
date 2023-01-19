@@ -21,7 +21,9 @@ struct Node {
 
 struct OneLinkedList {
 
-    Node* head, * tail;
+    Node* head;
+
+    Node* tail;
 
     OneLinkedList() {
     
@@ -34,23 +36,47 @@ struct OneLinkedList {
     }
 
     void pop_front() {
-    
+
         if (head == NULL) return;
 
         if (head == tail) {
-        
+
             delete tail;
-            
+
             head = tail = NULL;
-            
+
             return;
         }
 
         Node* node = head;
-        
+
         head = node->next;
-        
+
         delete node;
+    }
+
+    void pop_back() {
+
+        if (tail == NULL) return;
+
+        if (head == tail) {
+
+            delete tail;
+
+            head = tail = NULL;
+
+            return;
+        }
+
+        Node* node = head;
+
+        for(; node->next != tail; node = node->next);
+
+        node->next = NULL;
+
+        delete tail;
+
+        tail = node;
     }
 
     void push_back(char data) {
@@ -70,7 +96,7 @@ struct OneLinkedList {
         
         while (temp != NULL) {
         
-            cout << temp->data << " ";
+            cout << temp->data << "-->";
             
             temp = temp->next;
         }
@@ -117,10 +143,18 @@ int main(int argc, char *argv[])
     
     ll.print();
 
-    ll.reverse();
+    ll.pop_front();
+
+    ll.pop_back();
+
+    cout << "\nList after removing extreme elements:\n";
+
+    ll.print();
 
     cout << "\nReversed linked list:\n";
-    
+
+    ll.reverse();
+
     ll.print();
     
     cout << "\n";

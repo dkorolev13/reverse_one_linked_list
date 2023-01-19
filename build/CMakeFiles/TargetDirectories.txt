@@ -1,0 +1,3 @@
+/home/user/Desktop/reverse_one_linked_list/build/CMakeFiles/ReverseOneLinkedList.dir
+/home/user/Desktop/reverse_one_linked_list/build/CMakeFiles/edit_cache.dir
+/home/user/Desktop/reverse_one_linked_list/build/CMakeFiles/rebuild_cache.dir
